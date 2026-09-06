@@ -1,0 +1,34 @@
+{
+  // Interpretorul care chiar are torch/numpy (acelasi cu kernelul "Python (ML)")
+  "python.defaultInterpreterPath": "/opt/anaconda3/envs/ml/bin/python",
+  "python.terminal.activateEnvironment": true,
+  // Pylance: indexare + auto-import + vede src/ si utils/
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src",
+    "${workspaceFolder}"
+  ],
+  "python.analysis.indexing": true,
+  "python.analysis.packageIndexDepth": 3,
+  "python.analysis.userFileIndexingLimit": 5000,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.languageServer": "Pylance",
+  // Popup-ul de autocomplete in timp ce scrii — in .py SI in celule de notebook
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.preview": true,
+  "editor.tabCompletion": "on",
+  // Notebook-uri: aceleasi sugestii ca in fisiere normale
+  "notebook.suggestActions.enabled": true,
+  "jupyter.askForKernelRestart": false,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda"
+}
