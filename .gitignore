@@ -218,3 +218,27 @@ __marimo__/
 .streamlit/secrets.toml
 
 *.pt
+
+# Local editor and notebook state
+.vscode/
+.ipynb_checkpoints/
+
+# Local datasets and downloaded caches
+datasets/downloads/
+datasets/cache/
+utils/datasets/downloads/
+utils/datasets/cache/
+.cache/
+
+# Training outputs and model checkpoints
+models/
+my_imdb_model/
+my_nmt_attn_model.pt
+*.pth
+*.safetensors
+checkpoint-*/
+
+# Local experiment outputs
+wandb/
+mlruns/
+tensorboard/
